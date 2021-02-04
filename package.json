@@ -5,8 +5,13 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prettify": "prettier --write ."
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "prettify": "prettier --write .",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -38,7 +43,7 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
-    "*.{js,css,md,json}": "prettier --write"
+    "*.{js,jsx,ts,tsx,css,md,json}": "prettier --write"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",

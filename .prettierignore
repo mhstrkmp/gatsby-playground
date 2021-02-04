@@ -4,3 +4,5 @@ coverage
 
 # Ignore files
 package-lock.json
+.cache
+public
