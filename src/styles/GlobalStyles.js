@@ -20,6 +20,13 @@ body
   padding: 0;
   font-size: 16px;
 }
+
+h1,
+h2,
+h3,
+p {
+  margin: 0
+}
 `;
 
 export default GlobalStyles;
