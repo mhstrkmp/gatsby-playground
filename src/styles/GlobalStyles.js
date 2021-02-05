@@ -8,24 +8,17 @@ const GlobalStyles = createGlobalStyle`
 }
 
 :root {
+  /* Colors */
 }
 
 html {
+  font-size: 18px;
   scroll-behavior: smooth;
 }
 
-body
- {
+body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0
 }
 `;
 
