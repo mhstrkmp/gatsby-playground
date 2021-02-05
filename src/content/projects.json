@@ -1,0 +1,20 @@
+{
+  "title": "Projects",
+  "content": [
+    {
+      "image": "https://via.placeholder.com/200",
+      "title": "Title 1",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+    },
+    {
+      "image": "https://via.placeholder.com/200",
+      "title": "Title 2",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+    },
+    {
+      "image": "https://via.placeholder.com/200",
+      "title": "Title 3",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+    }
+  ]
+}

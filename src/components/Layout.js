@@ -12,9 +12,7 @@ const PageWrapper = styled.div`
   height: 100vh;
 `;
 
-const MainSection = styled.section`
-  // Styling
-`;
+const ContentWrapper = styled.div``;
 
 const Layout = ({ children }) => {
   return (
@@ -23,7 +21,7 @@ const Layout = ({ children }) => {
       <Typography />
       <PageWrapper>
         <Header />
-        <MainSection>{children}</MainSection>
+        <ContentWrapper>{children}</ContentWrapper>
         <Footer />
       </PageWrapper>
     </>
