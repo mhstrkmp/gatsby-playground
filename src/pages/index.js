@@ -14,18 +14,14 @@ const HomePageWrapper = styled.div`
 const HeroSection = styled.section`
   height: 100vh;
   display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   article {
     grid-row: 2 / 4;
-    grid-column: 2 / 5;
   }
 `;
 
 const ProjectsSection = styled.section`
-  display: grid;
-  place-content: center;
+  // Styling
 `;
 
 const CardsSection = styled.div`
@@ -38,7 +34,7 @@ const CardsSection = styled.div`
 const Home = () => {
   return (
     <HomePageWrapper>
-      <HeroSection>
+      <HeroSection id="intro">
         <article>
           <h2>Hello Gatsby!</h2>
           <p>
@@ -51,9 +47,8 @@ const Home = () => {
           </p>
         </article>
       </HeroSection>
-      <ProjectsSection>
-        <h2>Projects</h2>
-        <p>Some of the Projects I worked on recently ...</p>
+      <ProjectsSection id="projects">
+        <h2>Some Things I Made ...</h2>
         <CardsSection>
           {ProjectData.content.map((data, index) => {
             return (
@@ -67,7 +62,7 @@ const Home = () => {
           })}
         </CardsSection>
       </ProjectsSection>
-      <section>
+      <section id="contact">
         <h2>Contact</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis

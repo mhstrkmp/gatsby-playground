@@ -9,11 +9,16 @@ import Footer from "./Footer";
 const PageWrapper = styled.div`
   display: grid;
   grid-template-rows: auto 1fr auto;
+  grid-template-columns: repeat(12, 1fr);
   height: 100%;
+  header,
+  footer {
+    grid-column: span 12;
+  }
 `;
 
 const ContentWrapper = styled.main`
-  margin: 0 1.5rem;
+  grid-column: 2 / 12;
 `;
 
 const Layout = ({ children }) => {

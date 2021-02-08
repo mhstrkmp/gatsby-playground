@@ -2,13 +2,21 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
-  // Styling
+  text-align: center;
+  font-size: var(--smallFontSize);
+  padding: 1.5rem 0;
 `;
 
 const Footer = () => {
   return (
     <StyledFooter>
-      <p>Footer</p>
+      <a
+        href="https://github.com/mhstrkmp"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Crafted with ♥ by Matthias Heisterkamp
+      </a>
     </StyledFooter>
   );
 };

@@ -15,6 +15,11 @@
       "image": "https://via.placeholder.com/200",
       "title": "Title 3",
       "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+    },
+    {
+      "image": "https://via.placeholder.com/200",
+      "title": "Title 4",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
     }
   ]
 }

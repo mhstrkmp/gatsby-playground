@@ -20,6 +20,14 @@ body {
   margin: 0;
   padding: 0;
 }
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
 `;
 
 export default GlobalStyles;
