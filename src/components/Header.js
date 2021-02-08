@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
-  // Styling
+  position: sticky;
+  top: 0;
 `;
 
 const Header = () => {

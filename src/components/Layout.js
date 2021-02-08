@@ -9,10 +9,12 @@ import Footer from "./Footer";
 const PageWrapper = styled.div`
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: 100vh;
+  height: 100%;
 `;
 
-const ContentWrapper = styled.div``;
+const ContentWrapper = styled.main`
+  margin: 0 1.5rem;
+`;
 
 const Layout = ({ children }) => {
   return (
