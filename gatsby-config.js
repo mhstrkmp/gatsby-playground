@@ -6,6 +6,13 @@ module.exports = {
         // Add any options here
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog-posts`,
+        path: `${__dirname}/src/blog-posts`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
   ],
 };
