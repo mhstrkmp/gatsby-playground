@@ -1,4 +1,4 @@
-import { StaticQuery, graphql, Link } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 
@@ -15,35 +15,31 @@ const StyledHeader = styled.header`
 `;
 
 const Header = () => {
-  return (
-    <StaticQuery
-      query={graphql`
-        query HeadingQuery {
-          site {
-            siteMetadata {
-              title
-              menuLinks {
-                name
-                link
-              }
-            }
+  const data = useStaticQuery(graphql`
+    query HeadingQuery {
+      site {
+        siteMetadata {
+          title
+          menuLinks {
+            name
+            link
           }
         }
-      `}
-      render={(data) => (
-        <StyledHeader>
-          <nav>
-            <ul>
-              {data.site.siteMetadata.menuLinks.map((link) => (
-                <li key={link.name}>
-                  <Link to={link.link}>{link.name}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </StyledHeader>
-      )}
-    />
+      }
+    }
+  `);
+  return (
+    <StyledHeader>
+      <nav>
+        <ul>
+          {data.site.siteMetadata.menuLinks.map((link) => (
+            <li key={link.name}>
+              <Link to={link.link}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </StyledHeader>
   );
 };
 
