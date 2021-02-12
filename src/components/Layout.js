@@ -19,6 +19,8 @@ const PageWrapper = styled.div`
 
 const ContentWrapper = styled.main`
   grid-column: 2 / 12;
+  max-width: 1000px;
+  margin: 0 auto;
 `;
 
 const Layout = ({ children }) => {
