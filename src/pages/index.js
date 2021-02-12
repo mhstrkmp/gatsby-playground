@@ -47,7 +47,7 @@ const Home = () => {
           </p>
         </article>
       </HeroSection>
-      <ProjectsSection id="projects">
+      <ProjectsSection id="work">
         <h2>Some Things I Made ...</h2>
         <CardsSection>
           {ProjectData.content.map((data, index) => {

@@ -1,16 +1,49 @@
+import { StaticQuery, graphql, Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
   position: sticky;
   top: 0;
+  ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+  }
 `;
 
 const Header = () => {
   return (
-    <StyledHeader>
-      <h1>Matthias Heisterkamp</h1>
-    </StyledHeader>
+    <StaticQuery
+      query={graphql`
+        query HeadingQuery {
+          site {
+            siteMetadata {
+              title
+              menuLinks {
+                name
+                link
+              }
+            }
+          }
+        }
+      `}
+      render={(data) => (
+        <StyledHeader>
+          <nav>
+            <ul>
+              {data.site.siteMetadata.menuLinks.map((link) => (
+                <li key={link.name}>
+                  <Link to={link.link}>{link.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </StyledHeader>
+      )}
+    />
   );
 };
 
