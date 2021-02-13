@@ -9,6 +9,8 @@ const GlobalStyles = createGlobalStyle`
 
 :root {
   /* Colors */
+  --background-light: white;
+  --background: var(--background-light);
 }
 
 html {

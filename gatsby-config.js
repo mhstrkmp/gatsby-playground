@@ -3,12 +3,8 @@ module.exports = {
     title: "Matthias Heisterkamp | <mhstrkmp />",
     menuLinks: [
       {
-        name: "<mhstrkmp />",
-        link: "/",
-      },
-      {
         name: "work",
-        link: "#work",
+        link: "/#work",
       },
       {
         name: "blog",
@@ -16,7 +12,7 @@ module.exports = {
       },
       {
         name: "contact",
-        link: "#contact",
+        link: "/#contact",
       },
     ],
   },
