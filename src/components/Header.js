@@ -5,12 +5,22 @@ import styled from "styled-components";
 const StyledHeader = styled.header`
   position: sticky;
   top: 0;
+  margin: 0.5rem 1.25rem 0 1.25rem;
   ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, auto);
+    justify-items: start;
+    align-items: center;
     list-style-type: none;
-    width: 100%;
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
+    text-transform: lowercase;
+    li:not(:first-child) {
+      font-size: var(--smallFontSize);
+    }
+    li:not(:last-child) {
+      padding-right: 1.953rem;
+    }
   }
 `;
 
