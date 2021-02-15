@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Matthias Heisterkamp | <mhstrkmp />",
-    siteUrl: "https://www.mhstrkmp.dev",
+    siteUrl: "https://mhstrkmp.dev",
     menuLinks: [
       {
         name: "work",
@@ -34,8 +34,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://www.mhstrkmp.dev",
-        sitemap: "https://www.mhstrkmp.dev/sitemap.xml",
+        host: "https://mhstrkmp.dev",
+        sitemap: "https://mhstrkmp.dev/sitemap.xml",
         env: {
           development: {
             policy: [{ userAgent: "*", disallow: ["/"] }],
@@ -48,5 +48,6 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
   ],
 };
