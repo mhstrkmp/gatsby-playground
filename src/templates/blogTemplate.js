@@ -33,5 +33,5 @@ export const pageQuery = graphql`
 `;
 
 BlogTemplate.propTypes = {
-  data: PropTypes.string,
+  data: PropTypes.object,
 };
