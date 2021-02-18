@@ -80,7 +80,9 @@ const NavLinks = styled.ul`
       padding-top: 1.2rem;
     }
     transform: ${({ showNavLinks }) =>
-      showNavLinks ? "translateX(0)" : "translateX(100%)"};
+      showNavLinks
+        ? " height: 100vh; width: 100%; display: flex"
+        : "height: 0; width: 0; display: none;"};
   }
 `;
 
